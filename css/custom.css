@@ -12,7 +12,7 @@
 
 /* keep edition links aligned to the card bottom */
 .featured-boxes .featured-box {
-	height: 100%;
+	height: 100% !important; /* beat matchHeight inline px height */
 }
 
 .featured-boxes .featured-box .box-content {
@@ -23,6 +23,24 @@
 
 .featured-boxes .featured-box .box-content > p:first-of-type {
 	flex: 1 1 auto;
+}
+
+/* compact edition cards */
+.featured-boxes .featured-box {
+	min-height: 0 !important; /* override matchHeight pinning; flex keeps cards equal */
+}
+
+.featured-boxes .featured-box .box-content {
+	padding: 12px 25px 8px;
+}
+
+.featured-boxes .featured-box .icon-featured {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.featured-boxes .featured-box .box-content > p:first-of-type {
+	margin-bottom: 0.5rem;
 }
 
 /* site logo */
