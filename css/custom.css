@@ -10,6 +10,21 @@
 	text-decoration: none;
 }
 
+/* keep edition links aligned to the card bottom */
+.featured-boxes .featured-box {
+	height: 100%;
+}
+
+.featured-boxes .featured-box .box-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.featured-boxes .featured-box .box-content > p:first-of-type {
+	flex: 1 1 auto;
+}
+
 /* site logo */
 .header-logo a {
 	text-decoration: none;
