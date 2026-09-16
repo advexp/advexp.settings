@@ -10,24 +10,10 @@
 	text-decoration: none;
 }
 
-/* keep edition links aligned to the card bottom */
+/* equal minimal edition cards */
 .featured-boxes .featured-box {
-	height: 100% !important; /* beat matchHeight inline px height */
-}
-
-.featured-boxes .featured-box .box-content {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
-
-.featured-boxes .featured-box .box-content > p:first-of-type {
-	flex: 1 1 auto;
-}
-
-/* compact edition cards */
-.featured-boxes .featured-box {
-	min-height: 0 !important; /* override matchHeight pinning; flex keeps cards equal */
+	height: 100% !important;  /* stretch to row height; beats matchHeight inline px height */
+	min-height: 0 !important; /* override matchHeight pinning */
 }
 
 .featured-boxes .featured-box .box-content {
@@ -39,7 +25,7 @@
 	margin-bottom: 8px;
 }
 
-.featured-boxes .featured-box .box-content > p:first-of-type {
+.featured-boxes .featured-box .box-content > p:last-child {
 	margin-bottom: 0.5rem;
 }
 
