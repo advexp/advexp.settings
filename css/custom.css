@@ -29,8 +29,13 @@
 }
 
 .featured-boxes .featured-box .box-content > p:first-of-type {
-	flex: 1 1 auto;
 	margin-bottom: 0.5rem;
+}
+
+/* center the package link line in the leftover space */
+.featured-boxes .featured-box .box-content > p:last-child {
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 /* site logo */
