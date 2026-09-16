@@ -30,6 +30,14 @@
 }
 
 /* site logo */
+#header .header-container {
+	padding-left: 0;
+}
+
+#header .header-column {
+	align-items: flex-start;
+}
+
 .header-logo a {
 	text-decoration: none;
 }
