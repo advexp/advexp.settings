@@ -56,6 +56,28 @@ html .icon-featured .fab.fa-python {
 	color: #FFF;
 }
 
+/* net edition icon (iPad + .NET logo) */
+.advexp-settings-net {
+	background-image: url("../img/Advexp.Settings.Net.png");
+	display: inline-block;
+	width: 76px;
+	height: 76px;
+	background-position: center;
+	background-size: 76px 76px;
+	margin-top: 17px;
+}
+
+/* python edition icon (iPad + Python logo) */
+.advexp-settings-python {
+	background-image: url("../img/Advexp.Settings.Python.png");
+	display: inline-block;
+	width: 76px;
+	height: 76px;
+	background-position: center;
+	background-size: 76px 76px;
+	margin-top: 17px;
+}
+
 /* local product */
 
 .advexp-settings-local {
