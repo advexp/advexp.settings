@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Advexp.Settings - cross-platform .NET app settings and configurations for Windows, .NET Core, Xamarin.Mac, Xamarin.iOS or Xamarin.Android with cloud support.</title>
+    <title>Advexp.Settings - cross-platform app settings and configurations for Python and .NET projects.</title>
 
-    <meta name="keywords" content="settings, configurations, Windows, Xamarin.Mac, Xamarin.iOS, Xamarin.Android, .NET" />
-    <meta name="description" content="Advexp.Settings - cross-platform .NET app settings and configurations for Windows, .NET Core, Xamarin.Mac, Xamarin.iOS or Xamarin.Android with cloud support">
+    <meta name="keywords" content="settings, configurations, Python, .NET, PyPI, NuGet, cross-platform" />
+    <meta name="description" content="Advexp.Settings - cross-platform app settings and configurations for Python and .NET projects. Available on NuGet and PyPI, sources on GitHub.">
     <meta name="author" content="Alexey Ivakin">
 
     <!-- Favicon -->
@@ -37,13 +37,6 @@
     <link rel="stylesheet" href="css/theme-blog.css">
     <link rel="stylesheet" href="css/theme-shop.css">
 
-    <!-- Current Page CSS -->
-    <link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
-    <link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
-    <link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
-    <link rel="stylesheet" href="vendor/circle-flip-slideshow/css/component.css">
-
-    <!-- Demo CSS -->
     <!-- Skin CSS -->
     <link rel="stylesheet" href="css/skins/default.css">
 
@@ -56,16 +49,26 @@
 </head>
 <body>
     <div class="body">
-        <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 10, 'stickySetTop': '-10px', 'stickyChangeLogo': true}">
+        <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 10, 'stickySetTop': '-10px'}">
             <div class="header-body">
                 <div class="header-container container">
                     <div class="header-row">
+                        <div class="header-column">
+                            <div class="header-logo">
+                                <a href="/">
+                                    <span class="logo-text">advexp<strong>.net</strong></span>
+                                </a>
+                            </div>
+                        </div>
                         <div class="header-column justify-content-end">
                             <div class="header-row">
                                 <div class="header-nav">
                                     <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
                                         <nav class="collapse">
                                             <ul class="nav nav-pills" id="mainNav">
+                                                <li><a href="/">Home</a></li>
+                                                <li class="active"><a href="/advexp.settings/">Advexp.Settings</a></li>
+                                                <li><a href="https://github.com/advexp" target="_blank">GitHub</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -82,29 +85,20 @@
 
         <div role="main" class="main">
 
-
             <div class="container">
 
-                <div class="row text-center">
+                <div class="row text-center mt-4">
                     <div class="col">
-                        <h1 class="mb-2">Advexp.Settings 3.0</h1>
+                        <h1 class="mb-2">Advexp.Settings</h1>
+                        <p class="lead mb-0">Cross-platform app settings and configurations for Python and .NET projects.</p>
                         <p class="lead">
-                            <p>Create cross-platform .NET app settings and configurations for Windows, .NET Core, Xamarin.Mac, Xamarin.iOS or Xamarin.Android with cloud support.</p>
-                            <p>
-                                Store and sync app settings by using <a href="https://realm.io/" target="_blank">Realm Platform</a>.<br />
-                                Configure your app by using <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration" target="_blank">Microsoft.Extensions.Configuration</a> library.<br />
-                                Save settings to the cloud and sync between iOS devises by using <a href="https://developer.apple.com/icloud/" target="_blank">iCloud</a> service.<br />
-                                Save settings to the cloud and sync them across different devices by using <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync.html" target="_blank">Amazon Cognito Sync</a> service.<br />
-                                Remotely configure your mobile application by using <a href="https://firebase.google.com/docs/remote-config/" target="_blank">Google Firebase Remote Config</a>.<br />
-                                Load cryptographic keys and secrets by using <a href="https://azure.microsoft.com" target="_blank">Microsoft Azure</a> service.<br />
-                                Save and load settings as dynamic parameters (name - value pairs).
-                            </p>
+                            One settings API, two editions: a mature library for .NET available on NuGet
+                            and a Python port in active development, coming to PyPI.
                         </p>
                     </div>
                 </div>
 
             </div>
-
 
             <div class="container">
 
@@ -112,129 +106,90 @@
 
                 <div class="featured-boxes">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                            <div class="featured-box featured-box-secondary featured-box-effect-1 mt-0 mt-lg-5">
+                        <div class="col-lg-6">
+                            <div class="featured-box featured-box-secondary featured-box-effect-1 mt-0">
                                 <div class="box-content">
                                     <a href="https://www.nuget.org/packages/Advexp.Settings.Local" target="_blank">
                                         <i class="icon-featured">
-    	                                	<span class="advexp-settings-local"></span>
+                                            <span class="advexp-settings-local"></span>
                                         </i>
-                                        <h4>Advexp.Settings Local</h4>
+                                        <h4>Advexp.Settings for .NET</h4>
                                     </a>
-                                    <p>Create cross-platform .NET app settings and configuration. Locally configure your application. Make settings accessible in your Windows, .NET Core, Xamarin.Mac, Xamarin.iOS or Xamarin.Android applications natively.</p>
+                                    <p>Cross-platform .NET app settings and configuration library. Saves settings locally in the native format of each platform: .NET Framework, .NET Core, .NET Standard, UWP, Xamarin.Mac, Xamarin.iOS and Xamarin.Android. Open source, Apache-2.0 license.</p>
+                                    <p class="mb-1">
+                                        <i class="fas fa-cube"></i>
+                                        <a href="https://www.nuget.org/packages/Advexp.Settings.Local" target="_blank">Advexp.Settings.Local</a> on NuGet
+                                    </p>
+                                    <p class="mb-1">
+                                        <i class="fab fa-github"></i>
+                                        <a href="https://github.com/advexp/advexp.settings.net" target="_blank">advexp.settings.net</a> — source code and issues
+                                    </p>
+                                    <p class="mb-0"><code>dotnet add package Advexp.Settings.Local</code></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <div class="featured-box featured-box-tertiary featured-box-effect-1 mt-0 mt-lg-5">
+                        <div class="col-lg-6">
+                            <div class="featured-box featured-box-tertiary featured-box-effect-1 mt-0">
                                 <div class="box-content">
-                                    <a href="https://www.nuget.org/packages/Advexp.Settings.Cloud.Evaluation" target="_blank">
+                                    <a href="https://pypi.org/project/advexp-settings/" target="_blank">
                                         <i class="icon-featured">
-                                            <span class="advexp-settings-cloud"></span>
+                                            <i class="fab fa-python"></i>
                                         </i>
-                                        <h4>Advexp.Settings Cloud</h4>
+                                        <h4>Advexp.Settings for Python</h4>
                                     </a>
-                                    <p>All features from 'Advexp.Settings Local' + save/load/delete settings to the cloud and sync them across different devices. 
-                                    	Remotely configure your mobile application.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                            <div class="featured-box featured-box-quaternary featured-box-effect-1 mt-0 mt-lg-5">
-                                <div class="box-content">
-                                    <a href="https://www.nuget.org/packages/Advexp.Settings.Pro.Evaluation" target="_blank">
-                                        <i class="icon-featured">
-                                            <span class="advexp-settings-pro"></span>
-                                        </i>
-                                        <h4>Advexp.Settings Pro</h4>
-                                    </a>
-                                    <p>All features from 'Advexp.Settings Cloud' + use <a href="https://realm.io/" target="_blank">Realm Platform</a> to store and sync app settings.</p>
+                                    <p>Python port of the Advexp.Settings library, in active development. The <strong>advexp-settings</strong> name is already reserved on PyPI and the first public release is on the way. Python 3.9+, OS independent, Apache-2.0 license.</p>
+                                    <p class="mb-1">
+                                        <i class="fab fa-python"></i>
+                                        <a href="https://pypi.org/project/advexp-settings/" target="_blank">advexp-settings</a> on PyPI
+                                    </p>
+                                    <p class="mb-1">
+                                        <i class="fab fa-github"></i>
+                                        <a href="https://github.com/advexp/advexp.settings.python" target="_blank">advexp.settings.python</a> — source code and issues
+                                    </p>
+                                    <p class="mb-0"><code>pip install advexp-settings</code></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <hr />
 
-                <div class="container">
-                    <div>
-                        <h2>Our <strong>Features</strong></h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="heading-primary mb-0">MacOS and iOS</h4>
-                            <ul>
-                                <li>Save settings in a normal form using NSUserDefaults</li>
-                                <li>Save settings in an encrypted form using Keychain</li>
-                                <li>Use <a href="https://www.nuget.org/packages/Xamarin.InAppSettingsKit/" target="_blank">InAppSettingsKit</a> (for iOS app) together with Advexp.Settings</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <h4 class="heading-primary mb-0">Android</h4>
-                            <ul>
-                                <li>Use SharedPreferences to save settings in a normal form</li>
-                                <li>Use KeyStore to save confidential settings in an encrypted form</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="heading-primary mb-0">.NET Framework</h4>
-                            <ul>
-                                <li>Use Isolated Storage and Data Protection API to save settings locally</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <h4 class="heading-primary mb-0">.NET Core</h4>
-                            <ul>
-                                <li>Use Isolated Storage to save settings locally</li>
-                                <li>Configure your app by using <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration" target="_blank">Microsoft.Extensions.Configuration</a> library.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4 class="heading-primary mb-0">.NET Framework and .NET Core, cloud version</h4>
-                            <ul>
-                                <li>Load cryptographic keys and secrets by using <a href="https://azure.microsoft.com" target="_blank">Microsoft Azure</a> service</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4 class="heading-primary mb-0">Mobile applications, cloud version</h4>
-                            <ul>
-                                <li>Remotely configure your mobile applications by using <a href="https://firebase.google.com/docs/remote-config/" target="_blank">Google Firebase Remote Config</a> service</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4 class="heading-primary mb-0">iOS applications, cloud version</h4>
-                            <ul>
-                                <li>Save settings to the cloud and sync between iOS devises by using <a href="https://developer.apple.com/icloud/" target="_blank">iCloud</a> service.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row"><br /></div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4 class="heading-primary mb-0">All platforms</h4>
-                            <ul>
-                                <li><strong>Pro</strong>: Store and sync app settings by using <a href="https://realm.io/" target="_blank">Realm Platform</a></li>
-                                <li><strong>Cloud</strong>: Use <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync.html" target="_blank">Amazon Cognito Sync</a> service to save settings to the cloud and sync them across different devices</li>
-                                <li>Save settings as dynamic parameters (name - value pairs)</li>
-                                <li>Use environment variables as settings</li>
-                                <li>Use user storage for settings</li>
-                                <li><strong>Use any build-in or user-defined types which can be saved as a setting</strong></li>
-                                <li>Use Advexp.Settings in .NET Standard projects</li>
-                                <li>Save or load settings by using JSON. In this case, the additional NuGet package <a href="https://www.nuget.org/packages/newtonsoft.json" target="_blank">Json.NET</a> is used</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h4>and more...</h4>
+                <div>
+                    <h2>Our <strong>Features</strong></h2>
                 </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="heading-primary mb-0">Both editions</h4>
+                        <ul>
+                            <li>Save settings locally in the native format of each platform</li>
+                            <li><strong>Use any built-in or user-defined type as a setting</strong></li>
+                            <li>Save and load settings as dynamic parameters (name - value pairs)</li>
+                            <li>Open source core under the Apache-2.0 license</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="heading-primary mb-0">.NET edition</h4>
+                        <ul>
+                            <li>.NET Framework, .NET Core, .NET Standard, UWP, Xamarin.Mac, Xamarin.iOS, Xamarin.Android</li>
+                            <li>Configure your app by using the <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration" target="_blank">Microsoft.Extensions.Configuration</a> library</li>
+                            <li>Install from NuGet: <a href="https://www.nuget.org/packages/Advexp.Settings.Local" target="_blank">Advexp.Settings.Local</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="heading-primary mb-0">Python edition</h4>
+                        <ul>
+                            <li>Same settings API as the .NET edition</li>
+                            <li>Python 3.9+, OS independent</li>
+                            <li>In active development — the first release is coming to <a href="https://pypi.org/project/advexp-settings/" target="_blank">PyPI</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row"><br /></div>
+
             </div>
 
         </div>
@@ -265,21 +220,9 @@
     <script src="vendor/popper/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/common/common.min.js"></script>
-    <script src="vendor/jquery.validation/jquery.validation.min.js"></script>
-    <script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-    <script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
-    <script src="vendor/isotope/jquery.isotope.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/vide/vide.min.js"></script>
 
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
-
-    <!-- Current Page Vendor and Views -->
-    <script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
-    <script src="js/views/view.home.js"></script>
 
     <!-- Theme Custom -->
     <script src="js/custom.js"></script>

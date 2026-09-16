@@ -10,6 +10,37 @@
 	text-decoration: none;
 }
 
+/* site logo */
+.header-logo a {
+	text-decoration: none;
+}
+
+.logo-text {
+	display: inline-block;
+	font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	color: #333;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.logo-text strong {
+	font-weight: 800;
+	color: #0088cc;
+}
+
+html.sticky-header-active .logo-text {
+	font-size: 24px;
+}
+
+/* python edition icon */
+html .icon-featured .fab.fa-python {
+	font-size: 52px;
+	line-height: 110px;
+	color: #FFF;
+}
+
 /* local product */
 
 .advexp-settings-local {
