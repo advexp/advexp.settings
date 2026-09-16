@@ -98,7 +98,7 @@ html .featured-box-secondary .box-content {
 }
 
 html .featured-box-secondary h4 {
-	color: #777;
+	color: inherit;
 }
 
 /* cloud product */
