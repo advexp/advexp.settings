@@ -17,6 +17,9 @@
 }
 
 .featured-boxes .featured-box .box-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	padding: 12px 25px 8px;
 }
 
@@ -25,7 +28,8 @@
 	margin-bottom: 8px;
 }
 
-.featured-boxes .featured-box .box-content > p:last-child {
+.featured-boxes .featured-box .box-content > p:first-of-type {
+	flex: 1 1 auto;
 	margin-bottom: 0.5rem;
 }
 
