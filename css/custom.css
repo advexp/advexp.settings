@@ -61,6 +61,7 @@
 	color: #333;
 	line-height: 1;
 	white-space: nowrap;
+	transition: font-size 0.3s ease; /* synced with sticky header height animation */
 }
 
 .logo-text strong {
