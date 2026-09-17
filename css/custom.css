@@ -33,6 +33,16 @@ html h4.heading-primary {
 	margin-bottom: 8px;
 }
 
+/* always-on nested ring in the product icon circles (not hover-dependent) */
+.featured-boxes .featured-box .icon-featured:after {
+	top: -7px;
+	left: -7px;
+	padding: 7px;
+	box-shadow: 0 0 0 3px #FFF;
+	transform: scale(0.8);
+	opacity: 1;
+}
+
 .featured-boxes .featured-box .box-content > p:first-of-type {
 	margin-bottom: 0.5rem;
 }
