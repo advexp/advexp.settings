@@ -10,6 +10,11 @@
 	text-decoration: none;
 }
 
+/* Features section headings inherit the base font color */
+html h4.heading-primary {
+	color: inherit !important; /* beat skin default.css !important; follows future base color changes */
+}
+
 /* equal minimal edition cards */
 .featured-boxes .featured-box {
 	height: 100% !important;  /* stretch to row height; beats matchHeight inline px height */
