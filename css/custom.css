@@ -61,6 +61,7 @@
 	color: #333;
 	line-height: 1;
 	white-space: nowrap;
+	transform: translateY(-0.125em); /* optical vertical centering (ink vs line box) */
 	transition: font-size 0.3s ease; /* synced with sticky header height animation */
 }
 
