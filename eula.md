@@ -122,4 +122,4 @@ Agreement without the Licensor's written consent. This Agreement is governed
 by the law of [GOVERNING_LAW], without regard to its conflict-of-law rules.
 The English text of this Agreement prevails over any translation.
 
-Contact: [CONTACT_EMAIL]
+Contact: components@advexp.net
