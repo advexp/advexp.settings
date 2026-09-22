@@ -47,12 +47,13 @@ html h4.heading-primary {
 	margin-bottom: 0.5rem;
 }
 
-/* package link lines grouped: icon-under-icon, group centered in the card */
+/* package link lines grouped: icon-under-icon, group bottom-aligned
+   with the same bottom spacing in every card */
 .featured-boxes .featured-box .box-content > .package-links {
 	align-self: center;
 	text-align: left;
 	margin-top: auto;
-	margin-bottom: auto;
+	margin-bottom: 20px;
 }
 
 .featured-boxes .featured-box .box-content > .package-links > p {
