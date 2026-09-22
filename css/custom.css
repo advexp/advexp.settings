@@ -47,10 +47,15 @@ html h4.heading-primary {
 	margin-bottom: 0.5rem;
 }
 
-/* package link lines share the same baseline across cards */
+/* package link lines share the same baseline across cards;
+   flexible space goes above the GitHub link, package lines stay together */
 .featured-boxes .featured-box .box-content > p:last-child {
-	margin-top: auto;
 	margin-bottom: 20px;
+}
+
+.featured-boxes .featured-box .box-content > p.package-link-github {
+	margin-top: auto;
+	margin-bottom: 0;
 }
 
 /* site logo */
